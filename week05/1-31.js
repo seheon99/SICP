@@ -35,12 +35,12 @@ function pi_product(n) {
   function term(n) {
     return (
       n % 2 == 0
-      ? (n + 2) / (n + 1)
-      : (n + 1) / (n + 2)
+      ? (n + 1) / n
+      : n / (n + 1)
     )
   }
   function increase(n) {
     return n + 1;
   }
-  return 4 * product(term, 1, increase, n);
+  return 4 * product(term, 2, increase, n);
 }
