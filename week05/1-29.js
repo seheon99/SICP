@@ -18,8 +18,8 @@ function integral(f, a, b, n) {
       k === 0 || k === n
       ? y(k)
       : k % 2 == 0
-        ? 4 * y(k)
-        : 2 * y(k)
+        ? 2 * y(k)
+        : 4 * y(k)
     );
   }
 
